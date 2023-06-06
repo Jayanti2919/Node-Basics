@@ -18,3 +18,19 @@ As an asynchronous event-driven JavaScript runtime, Node.js is designed to build
 
 3. Request URLs:
     In the folder called `ReqUrls`, I extracted and sent the url that comes as a part of the request to the server.
+
+4. Handling Events:
+    In the folder called `Events`, I used the `events` module to emit and handle the event. 
+
+5. Sending Emails:
+    In the folder called `Email`, I used the `nodemailer` module to send an email. To run this code,
+
+        a. Clone this repository
+        b. Open cmd and navigate to `Email` directory using `cd`
+        c. Run `npm i` or `npm install`
+        d. Create a .env file with 3 constants:
+            i. EMAIL: sender's email
+            ii. PASSWORD: sender email's password
+            iii. RE_EMAIL: receiver's email
+    
+    Note that this code may not run if MFA is enabled on the sender's email even if correct password is provided.
